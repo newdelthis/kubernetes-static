@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
         - name: web
-          image: cdac-web:v1
-          imagePullPolicy: IfNotPresent   # use the image built inside minikube
+          image: newdelthis/cdac-web:v1
+          imagePullPolicy: Always        # pull from Docker Hub
           ports:
             - containerPort: 80
 ---
